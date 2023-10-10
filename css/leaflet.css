@@ -640,9 +640,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 .color-palette {
     position: absolute;
+	width:110px;
     bottom: 30px; /* Adjust the bottom position as needed */
     right: 30px; /* Adjust the left position as needed */
-    z-index: 1000; /* Ensure the palette is on top of other elements */
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
+	font-family: "맑은 고딕";
+	font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);	/* Ensure the palette is on top of other elements */
 }
 
 /* Style for each color item container */
@@ -681,4 +689,42 @@ svg.leaflet-image-layer.leaflet-interactive path {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+}
+
+/* Initially hide the color palette */
+.color-palette.hidden {
+    display: none;
+}
+
+/* Style your color palette items here */
+.color-palette {
+    /* Add your styles for the color palette container */
+}
+
+/* Style your color items here */
+.color-palette .color {
+    /* Add your styles for individual color items */
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    z-index: 1000; /* Ensure the button appears above the map */
+}
+
+#togglePaletteButton {
+       position: absolute;
+    bottom: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    z-index: 1000;
+background-color: white;
+    padding: 10px;
+	font-family: "맑은 고딕";
+	font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);	/* Ensure the palette is on top of other elements */
+}
+}
 }
